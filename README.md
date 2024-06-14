@@ -1,7 +1,7 @@
 <strong><h1 align="center"> ⭐ GitFav</h1></strong>
 
 <div align="center">
-<a href="https://git-fav-six.vercel.app/" target="_blank">
+<a href="https://github-favorites-lovat.vercel.app/" target="_blank">
   <img alt="" src="./assets/cover.png" width="90%">
 </a>
 </div>
@@ -22,7 +22,7 @@
 - Fluxo da aplicação com Try, Catch e Throw
 
 ## 📄 Link do site
--
+- https://github-favorites-lovat.vercel.app/
 
 
 ## 🚀 Tecnologias

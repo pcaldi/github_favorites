@@ -76,16 +76,27 @@ export class FavoritesView extends Favorites {
 
 
     this.update();
-    this.onAdd();
+    this.onAddEvent();
   }
 
-  onAdd() {
+  onAddEvent() {
     const addButton = this.root.querySelector('.input-wrapper button')
-    addButton.onclick = () => {
-      const { value } = this.root.querySelector('.input-wrapper input')
+    const input = this.root.querySelector(".input-wrapper input")
 
+    const addUser = () => {
+      const { value } = input;
       this.add(value)
+      input.value = ''; // Limpa o input após adicionar o usuário.
     }
+
+    addButton.onclick = addUser;
+
+    input.onkeypress = (event) => {
+      if (event.key === 'Enter') {
+        addUser()
+      }
+    }
+
   }
 
 
